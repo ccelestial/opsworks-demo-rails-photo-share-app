@@ -22,6 +22,7 @@ node[:deploy].each do |application, deploy|
   
        slack.say("Ingat!", slack_options)
     end
+    only_if {!node[:slack].nil?}
   end
 
 
