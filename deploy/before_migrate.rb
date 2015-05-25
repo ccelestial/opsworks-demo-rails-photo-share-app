@@ -20,7 +20,7 @@ node[:deploy].each do |application, deploy|
          icon_emoji: node[:slack][:icon_emoji]
        }
   
-       slack.say("Deploying....", slack_options)
+       slack.say("Wwwrraaaaawwww!", slack_options)
     end
     only_if {!node[:slack].nil?}
   end
